@@ -4,7 +4,7 @@ import CartItem from './CartItem/CartItem';
 import RandomCartItem from './RandomCartItem/RandomCartItem';
 
 const Cart = (props) => {
-    const { cart } = props;
+    const { cart, resetCart } = props;
 
     const [randomCartItem, setRandomCartItem] = useState([]);
 
@@ -24,11 +24,11 @@ const Cart = (props) => {
             {cart.length > 0 &&
                 <div className='cart-button-group'>
                 <button onClick={getRandomCart}>Choose 1 For Me</button>
-                <button>Choose Again</button>
+                <button onClick={()=>{resetCart()}}>Choose Again</button>
             </div>
             }
 
-            {
+            {cart.length > 0 &&
                 <RandomCartItem randomCartItem={randomCartItem}></RandomCartItem>
             }
         </div>

@@ -12,6 +12,10 @@ function App() {
     setCart(newCart);
   };
 
+  const resetCart = () => {
+    setCart([]);
+  };
+
   return (
     <div className="App">
       <div className="app-body">
@@ -19,7 +23,7 @@ function App() {
           <Products addToCart={addToCart}></Products>
         </div>
         <div className="cart">
-          <Cart cart={cart}></Cart>
+          <Cart resetCart={resetCart} cart={cart}></Cart>
         </div>
       </div>
     </div>
