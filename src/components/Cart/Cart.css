@@ -3,9 +3,12 @@
     height: 90vh;
     border-radius: 12px;
     margin-top: 30px;
-    padding-top: 20px;
     position: sticky;
     top: 30px;
+}
+.cart-container h3{
+    text-align: center;
+    padding-top: 5px;
 }
 .cart-button-group{
     padding: 0 15px;

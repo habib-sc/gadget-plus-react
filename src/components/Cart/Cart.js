@@ -16,13 +16,18 @@ const Cart = (props) => {
 
     return (
         <div className='cart-container'>
+            <h3>Cart Items</h3>
             {
                 cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)
             }
-            <div className='cart-button-group'>
+            
+            {cart.length > 0 &&
+                <div className='cart-button-group'>
                 <button onClick={getRandomCart}>Choose 1 For Me</button>
                 <button>Choose Again</button>
             </div>
+            }
+
             {
                 <RandomCartItem randomCartItem={randomCartItem}></RandomCartItem>
             }

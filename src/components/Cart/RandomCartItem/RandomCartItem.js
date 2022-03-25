@@ -10,7 +10,7 @@ const RandomCartItem = (props) => {
                     <img src={randomCartItem?.image} alt="img" />
                     <h4>{randomCartItem?.name}</h4>
                     <button>
-                        <TrashIcon></TrashIcon>
+                        <TrashIcon className='trash-icon'></TrashIcon>
                     </button>
                 </div>
             }
