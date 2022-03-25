@@ -1,12 +1,13 @@
 import './App.css';
-import Products from './Products/Products';
+import Products from './components/Products/Products';
 
 function App() {
   return (
     <div className="App">
       <div className="app-body">
         <div className='app-left'>
-        <Products></Products>
+          <Products></Products>
+
         </div>
         <div className="cart">
           cart

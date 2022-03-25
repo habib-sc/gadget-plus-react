@@ -1,10 +1,10 @@
 .product-container{
     border: 1px solid gray;
     border-radius: 12px;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    width: 280px;
-    min-height: 350px;
+    width: 200px;
+    min-height: 280px;
 }
 
 .product-container:hover{
@@ -12,8 +12,8 @@
 }
 
 .product-container img{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 12px;
 }
