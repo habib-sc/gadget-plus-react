@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="app-body">
-        <div>
+        <div className='app-left'>
         <Products></Products>
         </div>
         <div className="cart">

@@ -4,3 +4,17 @@
     gap: 30px;
     margin-top: 30px;
 }
+
+@media screen and (max-width: 767px) {
+    .products-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

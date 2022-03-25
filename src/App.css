@@ -1,9 +1,29 @@
 .App{
-  width: 1200px;
-  margin: 0 auto;
+  
 }
 
 .app-body{
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 5fr 2fr;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .app-body{
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .app-body{
+    grid-template-columns: 1fr;
+    width: 600px;
+  }
+  
 }
