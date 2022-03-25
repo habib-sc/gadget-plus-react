@@ -19,3 +19,21 @@
 .product-container p, h4{
     margin: 5px 0;
 }
+
+.product-container button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.product-container button:hover {
+    background-color: lightpink;
+    border: none;
+}
+.cart-icon{
+    width: 25px;
+}
