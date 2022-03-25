@@ -1,0 +1,23 @@
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+    padding: 5px 0px;
+}
+.cart-item img{
+    height: 50px;
+    border-radius: 50%;
+}
+.cart-item h4{
+    width: 150px;
+}
+button{
+    padding: 8px 10px;
+    border: none;background-color: transparent;
+    cursor: pointer;
+}
+.trash-icon{
+    height: 25px;
+}

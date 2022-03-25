@@ -1,16 +1,25 @@
+import { useState } from 'react';
 import './App.css';
+import Cart from './components/Cart/Cart';
 import Products from './components/Products/Products';
 
 function App() {
+
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    const newCart = [...cart, product];
+    setCart(newCart);
+  };
+
   return (
     <div className="App">
       <div className="app-body">
         <div className='app-left'>
-          <Products></Products>
-
+          <Products addToCart={addToCart}></Products>
         </div>
         <div className="cart">
-          cart
+          <Cart cart={cart}></Cart>
         </div>
       </div>
     </div>
