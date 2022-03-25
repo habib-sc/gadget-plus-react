@@ -1,0 +1,21 @@
+.product-container{
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-container:hover{
+    background-color: lightsteelblue;
+}
+
+.product-container img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-container p, h4{
+    margin: 5px 0;
+}
