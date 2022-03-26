@@ -4,7 +4,7 @@ import CartItem from './CartItem/CartItem';
 import RandomCartItem from './RandomCartItem/RandomCartItem';
 
 const Cart = (props) => {
-    const { cart, resetCart } = props;
+    const { cart, resetCart, deleteCartItem } = props;
 
     const [randomCartItem, setRandomCartItem] = useState([]);
 
@@ -18,7 +18,7 @@ const Cart = (props) => {
         <div className='cart-container'>
             <h3>Cart Items</h3>
             {
-                cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)
+                cart.map(cartItem => <CartItem key={cartItem.id} deleteCartItem={deleteCartItem} cartItem={cartItem}></CartItem>)
             }
             
             {cart.length > 0 &&

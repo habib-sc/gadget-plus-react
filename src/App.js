@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-modal/lib/components/Modal';
 import './App.css';
 import Cart from './components/Cart/Cart';
+import Header from './components/Header/Header';
 import Products from './components/Products/Products';
 import Qa from './components/Qa/Qa';
 
@@ -56,14 +57,20 @@ function App() {
     setCart([]);
   };
 
+  const deleteCartItem = (cartItem) => {
+    let cartAfterDelete = cart.filter(item=> item !== cartItem);
+    setCart(cartAfterDelete);
+  };
+
   return (
     <div className="App">
+      <Header></Header>
       <div className="app-body">
         <div className='app-left'>
           <Products addToCart={addToCart}></Products>
         </div>
         <div className="cart">
-          <Cart resetCart={resetCart} cart={cart}></Cart>
+          <Cart resetCart={resetCart} deleteCartItem={deleteCartItem} cart={cart}></Cart>
         </div>
       </div>
       <Qa></Qa>

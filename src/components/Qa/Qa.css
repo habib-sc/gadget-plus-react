@@ -16,3 +16,17 @@
     border: 1px solid gray;
     padding: 10px 15px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .qa-items-container{
+        flex-direction: column;
+    }
+  
+}
+  
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .qa-items-container{
+        flex-direction: column;
+    }
+}

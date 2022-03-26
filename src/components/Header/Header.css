@@ -1,0 +1,32 @@
+.header-container{
+    background-color: rgb(39, 39, 39);
+}
+
+.header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: wheat;
+    padding: 5px 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .header{
+        flex-direction: column;
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header{
+        flex-direction: column;
+    }
+}
