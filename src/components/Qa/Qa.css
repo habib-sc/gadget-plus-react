@@ -1,0 +1,18 @@
+.qa-container{
+    background-color: rgba(197, 195, 193, 0.479);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.qa-items-container{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+}
+.qa-item{
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 10px 15px;
+}

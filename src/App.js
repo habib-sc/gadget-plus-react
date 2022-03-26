@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Cart from './components/Cart/Cart';
 import Products from './components/Products/Products';
+import Qa from './components/Qa/Qa';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Cart resetCart={resetCart} cart={cart}></Cart>
         </div>
       </div>
+      <Qa></Qa>
     </div>
   );
 }
