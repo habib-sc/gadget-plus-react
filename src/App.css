@@ -1,6 +1,6 @@
 
 .app-body{
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
@@ -19,16 +19,31 @@
 
 @media screen and (max-width: 767px) {
   .app-body{
-    grid-template-columns: 1fr;
-    width: 300px;
+    flex-direction: column;
+  }
+  .app-left{
+    width: 100%;
+    order: 2;
+  }
+  .cart{
+    width: 100%;
+    position: relative;
+    order: 1;
   }
   
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .app-body{
-    grid-template-columns: 1fr;
-    width: 600px;
+    flex-direction: column;
   }
-  
+  .app-left{
+    width: 100%;
+    order: 2;
+  }
+  .cart{
+    width: 100%;
+    position: relative;
+    order: 1;
+  }
 }
