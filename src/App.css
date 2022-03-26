@@ -15,8 +15,6 @@
   position: relative;
 }
 
-
-
 @media screen and (max-width: 767px) {
   .app-body{
     flex-direction: column;

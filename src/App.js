@@ -23,6 +23,7 @@ function App() {
 
   const [cart, setCart] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalText, setModalText] = useState('');
 
   function openModal() {
     setIsOpen(true);
@@ -36,10 +37,17 @@ function App() {
     const newCart = [...cart, product];
     for (const cartItem of cart) {
       if ( cartItem.id === product.id ){
+        const newText = "The Product Allready Added In Cart";
+        setModalText(newText);
         openModal();
         return;
       }
-      
+    }
+    if (cart.length > 3) {
+      const newText2 = "Maximum 4 items you can add in your cart.";
+      setModalText(newText2);
+      openModal();
+      return;
     }
     setCart(newCart);
   }; 
@@ -70,7 +78,7 @@ function App() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </button>
-          <h3>The Product Allready Added In Cart!</h3>
+          <h3>{modalText}</h3>
         </div>
       </Modal>
     </div>
